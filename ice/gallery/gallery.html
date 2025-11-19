@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images of Christ</title>
+    <style>
+        body {
+            background: black;
+            cursor: url('images/christus.png') 12 12, auto;
+        }
+
+        #wrapper{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+            font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #gallery{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            border: 15px solid rgb(255, 255, 255);
+            width: 100%;
+            background-color: #ddd;
+            background-image:
+                linear-gradient(45deg, #ccc 26%, transparent 26%), 
+                linear-gradient(135deg, #ccc 26%, transparent 26%),
+                linear-gradient(45deg, transparent 75%, #ccc 75%),
+                linear-gradient(135deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 0, 10px -10px, 0px 10px; 
+        }
+
+        #gallery a img {
+            width: 200px;
+            height: 300px;
+            opacity: 50%;
+            display: block;
+            transition: opacity 0.3s;
+            cursor: url('images/christus.png') 12 12, pointer;
+        }
+
+        #gallery img:hover {
+            opacity: 100%;
+        }
+
+        /* Lightbox (popup) styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <h1>Christ Art Gallery</h1>
+        </nav>
+        <main>
+            <div id="gallery">
+                <!-- Small thumbnails linking to lightboxes -->
+                <a href="#img1"><img src="images/small/img1.jpg" alt="Christ art 1"></a>
+                <a href="#img2"><img src="images/small/img2.jpg" alt="Christ art 2"></a>
+                <a href="#img3"><img src="images/small/img3.jpg" alt="Christ art 3"></a>
+                <a href="#img4"><img src="images/small/img4.jpg" alt="Christ art 4"></a>
+                <a href="#img5"><img src="images/small/img5.jpg" alt="Christ art 5"></a>
+                <a href="#img6"><img src="images/small/img6.jpg" alt="Christ art 6"></a>
+                <a href="#img7"><img src="images/small/img7.jpg" alt="Christ art 7"></a>
+                <a href="#img8"><img src="images/small/img8.jpg" alt="Christ art 8"></a>
+                <a href="#img9"><img src="images/small/img9.jpg" alt="Christ art 9"></a>
+                <a href="#img10"><img src="images/small/img10.jpg" alt="Christ art 10"></a>
+                <a href="#img11"><img src="images/small/img11.jpg" alt="Christ art 11"></a>
+                <a href="#img12"><img src="images/small/img12.jpg" alt="Christ art 12"></a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Lightbox popups -->
+    <div class="lightbox" id="img1">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img1.png" alt="Christ art 1 large">
+    </div>
+    <div class="lightbox" id="img2">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img2.png" alt="Christ art 2 large">
+    </div>
+    <div class="lightbox" id="img3">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img3.png" alt="Christ art 3 large">
+    </div>
+    <div class="lightbox" id="img4">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img4.png" alt="Christ art 4 large">
+    </div>
+    <div class="lightbox" id="img5">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img5.png" alt="Christ art 5 large">
+    </div>
+    <div class="lightbox" id="img6">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img6.png" alt="Christ art 6 large">
+    </div>
+    <div class="lightbox" id="img7">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img7.png" alt="Christ art 7 large">
+    </div>
+    <div class="lightbox" id="img8">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img8.png" alt="Christ art 8 large">
+    </div>
+    <div class="lightbox" id="img9">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img9.png" alt="Christ art 9 large">
+    </div>
+    <div class="lightbox" id="img10">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img10.png" alt="Christ art 10 large">
+    </div>
+    <div class="lightbox" id="img11">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img11.png" alt="Christ art 11 large">
+    </div>
+    <div class="lightbox" id="img12">
+        <a href="#" class="close">&times;</a>
+        <img src="images/big/img12.png" alt="Christ art 12 large">
+    </div>
+</body>
+</html>

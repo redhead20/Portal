@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #2d1b4e, #1a0f2e);
+    box-shadow: 0 0 50px rgba(255, 102, 0, 0.3);
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ff6600;
+    padding: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+nav ul li {
+    padding: 20px 40px;
+    background-color: #ff6600;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-right: 2px solid #cc5200;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li:hover {
+    background-color: #cc5200;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+main {
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: #ff6600;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7),
+                 0 0 20px rgba(255, 102, 0, 0.5);
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+    border: 5px solid #ff6600;
+}
+
+/* Sections */
+section {
+    background-color: rgba(255, 102, 0, 0.1);
+    padding: 25px;
+    margin: 25px 0;
+    border-left: 5px solid #ff6600;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(255, 102, 0, 0.3);
+}
+
+h2 {
+    color: #ff9933;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #000;
+    color: #ff6600;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top: 3px solid #ff6600;
+    text-shadow: 1px 1px 3px rgba(255, 102, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        border-right: none;
+        border-bottom: 2px solid #cc5200;
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}

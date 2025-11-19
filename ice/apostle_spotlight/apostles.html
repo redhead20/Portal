@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Apostles Spotlights</title>
+  <style>
+    body {
+      background-color: #f2f7ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #container {
+      background: url("images/christus.webp") no-repeat center center;
+      background-size: cover;
+      border: 10px solid black;
+      border-radius: 20px;
+      padding: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 50px;
+    }
+
+    .first-presidency {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      align-items: start;
+    }
+
+    .apostles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      align-items: start;
+    }
+
+    .spotlight {
+      text-align: center;
+    }
+
+    .spotlight img,
+    .mystery {
+      height: 200px;
+      width: 200px;
+      border: 5px solid white;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+      transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .spotlight img:hover,
+    .mystery:hover {
+      border-color: gold;
+      transform: scale(1.05);
+    }
+
+    .mystery {
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      font-weight: bold;
+      color: #002855;
+      text-shadow: 0 0 5px white;
+      cursor: pointer;
+    }
+
+    .spotlight h2 {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px;
+      text-shadow: 0 0 5px black;
+    }
+
+    h1,
+    h2.section-title {
+      color: #002855;
+    }
+
+    h2.section-title {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Apostles Spotlights</h1>
+  <div id="container">
+    <h2 class="section-title">First Presidency</h2>
+    <div class="first-presidency">
+      <div class="spotlight">
+        <img src="images/eyring.webp" alt="Henry B. Eyring">
+        <h2>Henry B. Eyring</h2>
+        <h3>First Counselor</h3>
+      </div>
+      <div class="spotlight">
+        <img src="images/oaks.webp" alt="Dallin H. Oaks">
+        <h2>Dallin H. Oaks</h2>
+        <h3>President</h3>
+      </div>
+      <div class="spotlight">
+        <img src="images/christofferson.webp" alt="D. Todd Christofferson">
+        <h2>D. Todd Christofferson</h2>
+        <h3>Second Counselor</h3>
+      </div>
+    </div>
+
+    <h2 class="section-title">Quorum of the Twelve Apostles</h2>
+    <div class="apostles-grid">
+      <div class="spotlight">
+        <img src="images/holland.webp" alt="Jeffrey R. Holland">
+        <h2>Jeffrey R. Holland</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+        <h2>Dieter F. Uchtdorf</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/bednar.webp" alt="David A. Bednar">
+        <h2>David A. Bednar</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/cook.webp" alt="Quentin L. Cook">
+        <h2>Quentin L. Cook</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/anderson.webp" alt="Neil L. Anderson">
+        <h2>Neil L. Anderson</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/rasband.webp" alt="Ronald A. Rasband">
+        <h2>Ronald A. Rasband</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/stevenson.webp" alt="Gary E. Stevenson">
+        <h2>Gary E. Stevenson</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/renlund.webp" alt="Dale G. Renlund">
+        <h2>Dale G. Renlund</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/gong.webp" alt="Gerrit W. Gong">
+        <h2>Gerrit W. Gong</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/soares.webp" alt="Ulisses Soares">
+        <h2>Ulisses Soares</h2>
+      </div>
+      <div class="spotlight">
+        <img src="images/kearon.webp" alt="Patrick Kearon">
+        <h2>Patrick Kearon</h2>
+      </div>
+      <div class="spotlight">
+        <div class="mystery">?</div>
+        <h2>Coming Soon</h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
